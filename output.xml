@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170522 15:23:56.689" generator="Robot 3.0.2 (Python 2.7.11 on darwin)">
+<suite source="/Users/duckstab/git/StabbyMcDuck/robot-framework/youtube-test/youtube.robot" id="s1" name="Youtube">
+<test id="s1-t1" name="Homepage Loads">
+<kw name="Open Homepage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170522 15:23:56.822" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
+<status status="PASS" endtime="20170522 15:24:01.872" starttime="20170522 15:23:56.822"></status>
+</kw>
+<status status="PASS" endtime="20170522 15:24:01.873" starttime="20170522 15:23:56.822"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>${SEARCH_BAR}</arg>
+</arguments>
+<msg timestamp="20170522 15:24:01.874" level="INFO">Verifying element 'id=masthead-search-term' is visible.</msg>
+<status status="PASS" endtime="20170522 15:24:02.442" starttime="20170522 15:24:01.873"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170522 15:24:02.506" starttime="20170522 15:24:02.443"></status>
+</kw>
+<status status="PASS" endtime="20170522 15:24:02.506" critical="yes" starttime="20170522 15:23:56.821"></status>
+</test>
+<test id="s1-t2" name="Search for Robot Framework Tutorial">
+<kw name="Open Homepage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170522 15:24:02.508" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
+<status status="PASS" endtime="20170522 15:24:10.301" starttime="20170522 15:24:02.508"></status>
+</kw>
+<status status="PASS" endtime="20170522 15:24:10.302" starttime="20170522 15:24:02.508"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${SEARCH_BAR}</arg>
+<arg>Robot Framework Tutorial</arg>
+</arguments>
+<msg timestamp="20170522 15:24:10.302" level="INFO">Typing text 'Robot Framework Tutorial' into text field 'id=masthead-search-term'</msg>
+<status status="PASS" endtime="20170522 15:24:11.370" starttime="20170522 15:24:10.302"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${SEARCH_BAR_BUTTON}</arg>
+</arguments>
+<msg timestamp="20170522 15:24:11.371" level="INFO">Clicking button 'css=.search-button'.</msg>
+<status status="PASS" endtime="20170522 15:24:11.557" starttime="20170522 15:24:11.370"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>results</arg>
+</arguments>
+<status status="PASS" endtime="20170522 15:24:11.624" starttime="20170522 15:24:11.558"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170522 15:24:11.689" starttime="20170522 15:24:11.625"></status>
+</kw>
+<status status="PASS" endtime="20170522 15:24:11.689" critical="yes" starttime="20170522 15:24:02.507"></status>
+</test>
+<test id="s1-t3" name="Find Robot Framework Tutorial Channel">
+<kw name="Open Homepage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170522 15:24:11.691" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
+<status status="PASS" endtime="20170522 15:24:16.055" starttime="20170522 15:24:11.691"></status>
+</kw>
+<status status="PASS" endtime="20170522 15:24:16.055" starttime="20170522 15:24:11.690"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${SEARCH_BAR}</arg>
+<arg>Robot Framework Tutorial</arg>
+</arguments>
+<msg timestamp="20170522 15:24:16.056" level="INFO">Typing text 'Robot Framework Tutorial' into text field 'id=masthead-search-term'</msg>
+<status status="PASS" endtime="20170522 15:24:17.107" starttime="20170522 15:24:16.056"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${SEARCH_BAR_BUTTON}</arg>
+</arguments>
+<msg timestamp="20170522 15:24:17.107" level="INFO">Clicking button 'css=.search-button'.</msg>
+<status status="PASS" endtime="20170522 15:24:17.298" starttime="20170522 15:24:17.107"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds 5 seconds">
+<msg timestamp="20170522 15:24:17.304" level="FAIL">No keyword with name 'Wait Until Keyword Succeeds 5 seconds' found.</msg>
+<status status="FAIL" endtime="20170522 15:24:17.304" starttime="20170522 15:24:17.304"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170522 15:24:17.375" starttime="20170522 15:24:17.305"></status>
+</kw>
+<status status="FAIL" endtime="20170522 15:24:17.375" critical="yes" starttime="20170522 15:24:11.690">No keyword with name 'Wait Until Keyword Succeeds 5 seconds' found.</status>
+</test>
+<status status="FAIL" endtime="20170522 15:24:17.376" starttime="20170522 15:23:56.691"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Youtube" pass="2">Youtube</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
