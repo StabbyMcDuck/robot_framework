@@ -6,7 +6,6 @@ ${HOMEPAGE}		https://www.youtube.com
 ${BROWSER}		chrome
 ${SEARCH_BAR}	id=masthead-search-term
 ${SEARCH_BAR_BUTTON}	css=.search-button
-${CHANNEL_LINK}	span[contains(@class, 'yt-badge') and text() = 'Channel']
 
 *** Keywords ***
 Open Homepage
@@ -29,8 +28,8 @@ Find Robot Framework Tutorial Channel
 	Open Homepage
 	Input Text	${SEARCH_BAR}	Robot Framework Tutorial
 	Click Button	${SEARCH_BAR_BUTTON}
-	Wait Until Element Is Visible xpath=//li/span[text()='Channel']
+	BuiltIn.Sleep	5 seconds
 	Click Element	xpath=//li/span[text()='Channel']
 	${url}=	Get Location
-	Should Be Equal ${url}	https://www.youtube.com/channel/UCgcU5MOQ7Q-huwBdGYIcYfQ
+	Should Be Equal As Strings	${url}	https://www.youtube.com/channel/UCgcU5MOQ7Q-huwBdGYIcYfQ
 	[Teardown]	Close Browser

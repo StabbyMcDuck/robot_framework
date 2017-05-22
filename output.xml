@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170522 15:23:56.689" generator="Robot 3.0.2 (Python 2.7.11 on darwin)">
-<suite source="/Users/duckstab/git/StabbyMcDuck/robot-framework/youtube-test/youtube.robot" id="s1" name="Youtube">
+<robot generated="20170522 15:53:35.085" generator="Robot 3.0.2 (Python 2.7.11 on darwin)">
+<suite source="/Users/duckstab/git/StabbyMcDuck/robot-framework/youtube-test/youtube.robot" id="s1" name="Find Robot Framework Tutorial Channel">
 <test id="s1-t1" name="Homepage Loads">
 <kw name="Open Homepage">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,24 +9,24 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170522 15:23:56.822" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
-<status status="PASS" endtime="20170522 15:24:01.872" starttime="20170522 15:23:56.822"></status>
+<msg timestamp="20170522 15:53:35.173" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
+<status status="PASS" endtime="20170522 15:53:39.742" starttime="20170522 15:53:35.172"></status>
 </kw>
-<status status="PASS" endtime="20170522 15:24:01.873" starttime="20170522 15:23:56.822"></status>
+<status status="PASS" endtime="20170522 15:53:39.742" starttime="20170522 15:53:35.172"></status>
 </kw>
 <kw name="Element Should Be Visible" library="Selenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>${SEARCH_BAR}</arg>
 </arguments>
-<msg timestamp="20170522 15:24:01.874" level="INFO">Verifying element 'id=masthead-search-term' is visible.</msg>
-<status status="PASS" endtime="20170522 15:24:02.442" starttime="20170522 15:24:01.873"></status>
+<msg timestamp="20170522 15:53:39.743" level="INFO">Verifying element 'id=masthead-search-term' is visible.</msg>
+<status status="PASS" endtime="20170522 15:53:40.316" starttime="20170522 15:53:39.743"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170522 15:24:02.506" starttime="20170522 15:24:02.443"></status>
+<status status="PASS" endtime="20170522 15:53:40.380" starttime="20170522 15:53:40.317"></status>
 </kw>
-<status status="PASS" endtime="20170522 15:24:02.506" critical="yes" starttime="20170522 15:23:56.821"></status>
+<status status="PASS" endtime="20170522 15:53:40.380" critical="yes" starttime="20170522 15:53:35.171"></status>
 </test>
 <test id="s1-t2" name="Search for Robot Framework Tutorial">
 <kw name="Open Homepage">
@@ -36,10 +36,10 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170522 15:24:02.508" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
-<status status="PASS" endtime="20170522 15:24:10.301" starttime="20170522 15:24:02.508"></status>
+<msg timestamp="20170522 15:53:40.382" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
+<status status="PASS" endtime="20170522 15:53:44.722" starttime="20170522 15:53:40.382"></status>
 </kw>
-<status status="PASS" endtime="20170522 15:24:10.302" starttime="20170522 15:24:02.508"></status>
+<status status="PASS" endtime="20170522 15:53:44.722" starttime="20170522 15:53:40.381"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -47,29 +47,29 @@
 <arg>${SEARCH_BAR}</arg>
 <arg>Robot Framework Tutorial</arg>
 </arguments>
-<msg timestamp="20170522 15:24:10.302" level="INFO">Typing text 'Robot Framework Tutorial' into text field 'id=masthead-search-term'</msg>
-<status status="PASS" endtime="20170522 15:24:11.370" starttime="20170522 15:24:10.302"></status>
+<msg timestamp="20170522 15:53:44.723" level="INFO">Typing text 'Robot Framework Tutorial' into text field 'id=masthead-search-term'</msg>
+<status status="PASS" endtime="20170522 15:53:45.665" starttime="20170522 15:53:44.723"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${SEARCH_BAR_BUTTON}</arg>
 </arguments>
-<msg timestamp="20170522 15:24:11.371" level="INFO">Clicking button 'css=.search-button'.</msg>
-<status status="PASS" endtime="20170522 15:24:11.557" starttime="20170522 15:24:11.370"></status>
+<msg timestamp="20170522 15:53:45.665" level="INFO">Clicking button 'css=.search-button'.</msg>
+<status status="PASS" endtime="20170522 15:53:45.882" starttime="20170522 15:53:45.665"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>results</arg>
 </arguments>
-<status status="PASS" endtime="20170522 15:24:11.624" starttime="20170522 15:24:11.558"></status>
+<status status="PASS" endtime="20170522 15:53:45.915" starttime="20170522 15:53:45.882"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170522 15:24:11.689" starttime="20170522 15:24:11.625"></status>
+<status status="PASS" endtime="20170522 15:53:45.980" starttime="20170522 15:53:45.916"></status>
 </kw>
-<status status="PASS" endtime="20170522 15:24:11.689" critical="yes" starttime="20170522 15:24:02.507"></status>
+<status status="PASS" endtime="20170522 15:53:45.980" critical="yes" starttime="20170522 15:53:40.381"></status>
 </test>
 <test id="s1-t3" name="Find Robot Framework Tutorial Channel">
 <kw name="Open Homepage">
@@ -79,10 +79,10 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170522 15:24:11.691" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
-<status status="PASS" endtime="20170522 15:24:16.055" starttime="20170522 15:24:11.691"></status>
+<msg timestamp="20170522 15:53:45.982" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'</msg>
+<status status="PASS" endtime="20170522 15:53:53.042" starttime="20170522 15:53:45.982"></status>
 </kw>
-<status status="PASS" endtime="20170522 15:24:16.055" starttime="20170522 15:24:11.690"></status>
+<status status="PASS" endtime="20170522 15:53:53.042" starttime="20170522 15:53:45.981"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -90,38 +90,66 @@
 <arg>${SEARCH_BAR}</arg>
 <arg>Robot Framework Tutorial</arg>
 </arguments>
-<msg timestamp="20170522 15:24:16.056" level="INFO">Typing text 'Robot Framework Tutorial' into text field 'id=masthead-search-term'</msg>
-<status status="PASS" endtime="20170522 15:24:17.107" starttime="20170522 15:24:16.056"></status>
+<msg timestamp="20170522 15:53:53.043" level="INFO">Typing text 'Robot Framework Tutorial' into text field 'id=masthead-search-term'</msg>
+<status status="PASS" endtime="20170522 15:53:53.984" starttime="20170522 15:53:53.042"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${SEARCH_BAR_BUTTON}</arg>
 </arguments>
-<msg timestamp="20170522 15:24:17.107" level="INFO">Clicking button 'css=.search-button'.</msg>
-<status status="PASS" endtime="20170522 15:24:17.298" starttime="20170522 15:24:17.107"></status>
+<msg timestamp="20170522 15:53:53.985" level="INFO">Clicking button 'css=.search-button'.</msg>
+<status status="PASS" endtime="20170522 15:53:54.165" starttime="20170522 15:53:53.985"></status>
 </kw>
-<kw name="Wait Until Keyword Succeeds 5 seconds">
-<msg timestamp="20170522 15:24:17.304" level="FAIL">No keyword with name 'Wait Until Keyword Succeeds 5 seconds' found.</msg>
-<status status="FAIL" endtime="20170522 15:24:17.304" starttime="20170522 15:24:17.304"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<msg timestamp="20170522 15:53:59.166" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170522 15:53:59.167" starttime="20170522 15:53:54.165"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//li/span[text()='Channel']</arg>
+</arguments>
+<msg timestamp="20170522 15:53:59.167" level="INFO">Clicking element 'xpath=//li/span[text()='Channel']'.</msg>
+<status status="PASS" endtime="20170522 15:53:59.275" starttime="20170522 15:53:59.167"></status>
+</kw>
+<kw name="Get Location" library="Selenium2Library">
+<doc>Returns the current location.</doc>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20170522 15:53:59.282" level="INFO">${url} = https://www.youtube.com/channel/UCgcU5MOQ7Q-huwBdGYIcYfQ</msg>
+<status status="PASS" endtime="20170522 15:53:59.283" starttime="20170522 15:53:59.275"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>https://www.youtube.com/channel/UCgcU5MOQ7Q-huwBdGYIcYfQ</arg>
+</arguments>
+<status status="PASS" endtime="20170522 15:53:59.283" starttime="20170522 15:53:59.283"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170522 15:24:17.375" starttime="20170522 15:24:17.305"></status>
+<status status="PASS" endtime="20170522 15:53:59.352" starttime="20170522 15:53:59.284"></status>
 </kw>
-<status status="FAIL" endtime="20170522 15:24:17.375" critical="yes" starttime="20170522 15:24:11.690">No keyword with name 'Wait Until Keyword Succeeds 5 seconds' found.</status>
+<status status="PASS" endtime="20170522 15:53:59.352" critical="yes" starttime="20170522 15:53:45.981"></status>
 </test>
-<status status="FAIL" endtime="20170522 15:24:17.376" starttime="20170522 15:23:56.691"></status>
+<status status="PASS" endtime="20170522 15:53:59.353" starttime="20170522 15:53:35.088"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="2">Critical Tests</stat>
-<stat fail="1" pass="2">All Tests</stat>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Youtube" pass="2">Youtube</stat>
+<stat fail="0" id="s1" name="Find Robot Framework Tutorial Channel" pass="3">Find Robot Framework Tutorial Channel</stat>
 </suite>
 </statistics>
 <errors>
